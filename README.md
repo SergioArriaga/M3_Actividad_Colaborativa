@@ -31,7 +31,7 @@ kable(head(restTenerife[,1:5]))
 dim(restTenerife) #total filas y columnas
 names(restTenerife)#visualizamos variables filas
 # Eliminamos columnas que no aportan información alguna
-#clase,ref,fot,tar,act
+# clase,ref,fot,tar,act
 restTenerife <-restTenerife[ , -c(1,7,13,14,15)]
 View(restTenerife)#visualizamos tabla de datos
 # Visualizamos si hay problemas con la Ñ
