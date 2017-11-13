@@ -111,7 +111,7 @@ if (length(grep("Ã³",restTenerife$email))>=1){
   restTenerife$email<-gsub("Ã³", "ó",restTenerife$email)
 }
 
-##Corregimos tilde en u
+## Corregimos tilde en u
 if (length(grep("Ãº",restTenerife$nombre))>=1){
   restTenerife$nombre<-gsub("Ãº", "ú",restTenerife$nombre)
 }
@@ -123,7 +123,7 @@ if (length(grep("Ãº",restTenerife$dir))>=1){
 if (length(grep("Ãº",restTenerife$email))>=1){
   restTenerife$email<-gsub("Ãº", "ú",restTenerife$email)
 }
-##Corregimos tilde en i
+## Corregimos tilde en i
 if (length(grep("Ã",restTenerife$nombre ))>=1){
   restTenerife$nombre<-gsub("Ã", "í",restTenerife$nombre)
 }
@@ -135,8 +135,6 @@ if (length(grep("Ã",restTenerife$dir))>=1){
 if (length(grep("Ã",restTenerife$email))>=1){
   restTenerife$email<-gsub("Ã", "í",restTenerife$email)
 }
-
-# Eliminamos los valores '0' de la columna fax pues se trata de un error
 # Comprobamos
 View(restTenerife)#visualizamos tabla de datos
 length(grep("Ã±",restTenerife$nombre))
