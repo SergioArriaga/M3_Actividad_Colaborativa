@@ -1,6 +1,8 @@
 # M3_Actividad_Colaborativa
 A continuación se explican los pasos seguidos para hacer más práctico la explotación de este fichero de datos que contiene todos los restaurantes de la isla de Tenerife 
 http://datos.gob.es/es/catalogo/l03380011-hosteleria-y-restauracion
+
+
 Enlace descarga dataset: http://www.tenerifedata.com/dataset/8f1efe35-483c-41fd-9087-1faf20b2bf4a/resource/8e6ecc86-cc85-4746-8bdd-8e2aa85b5b1e/download/hosteleriayrestauracion.csv
 # Establecer espacio de trabajo
 setwd("C:/Práctica en R/Actividad colaborativa/scripts")
