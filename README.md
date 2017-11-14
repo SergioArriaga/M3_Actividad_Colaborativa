@@ -185,14 +185,16 @@ pruebas<-apply(pruebas,1, paste,collapse=" ")#Sobre dataframe pruebas concatenam
 restTenerife$dir<-pruebas#Asignamos valores ya concatenados a la variable dir
 restTenerife <-restTenerife[ , -c(3)]#Eliminamos columna sigla
 
-
+```
 
 
 # Guardamos el archivo csv de los datos procesados
+```
+[R]
 outputFileName <- paste0("../datos/HosteleriaTenerife_tidy ",format(Sys.time(),"%Y-%m-%d_%H-%M-%S"),".csv")
 outputFileName
 #Guardamos tabla en formato CSV sin indices por filas y valores NA sean celdas en blanco
 write.csv2(as.data.frame(restTenerife), outputFileName, row.names = FALSE, na="")
 ```
-https://eldesvandejose.com/2016/08/10/git-y-github-iv-los-archivos-readme-md/
+
 
