@@ -179,7 +179,8 @@ restTenerife$telefono_fijo<-gsub('[6]', NA ,restTenerife$telefono_fijo)
 restTenerife$movil<-gsub('[9]', NA ,restTenerife$movil)
 # Ponemos la columna movil justo despues de la columna telefono_fijo
 restTenerife = restTenerife[ , c(1,2,3,4,5,6,7,8,9,13,10,11,12)]
-# Para simplificar columnas unificamos la columna sigla(calle, avenida,carretera,plaza) y dir elimando la columna sigla
+# Para simplificar columnas unificamos la columna sigla(calle, avenida,carretera,plaza) y dir 
+# elimando la columna sigla
 pruebas<-restTenerife[ ,3:4]#Creamos dataframe temporal con estas dos variables
 pruebas<-apply(pruebas,1, paste,collapse=" ")#Sobre dataframe pruebas concatenamos los datos separandolos con espacio
 restTenerife$dir<-pruebas#Asignamos valores ya concatenados a la variable dir
